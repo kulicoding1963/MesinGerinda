@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.screen.KuisFragment">
+
+    <ImageView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/miniquis"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="16dp"
+            android:id="@+id/imageView"/>
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvEvaluasi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            tools:listitem="@layout/item_rv_evaluasi"
+            tools:itemCount="5"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tekan tombol dibawah untuk mengirim hasil evaluasi"
+            app:layout_constraintTop_toBottomOf="@+id/rvEvaluasi"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/rvEvaluasi"
+            app:layout_constraintStart_toStartOf="@+id/rvEvaluasi"
+            android:id="@+id/textView"/>
+
+    <ImageView
+            android:id="@+id/imgWhat"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            app:srcCompat="@android:drawable/ic_dialog_email"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintStart_toStartOf="@+id/rvEvaluasi"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/imgEmail"
+            app:layout_constraintBottom_toTopOf="@+id/btnBack" android:layout_marginBottom="24dp"/>
+    <ImageView
+            android:id="@+id/imgEmail"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:srcCompat="@android:drawable/ic_dialog_email"
+            app:layout_constraintEnd_toEndOf="@+id/rvEvaluasi"
+            app:layout_constraintTop_toTopOf="@+id/imgWhat"
+            app:layout_constraintStart_toEndOf="@+id/imgWhat"
+            app:layout_constraintBottom_toBottomOf="@+id/imgWhat"/>
+    <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/back"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="8dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

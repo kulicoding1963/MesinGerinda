@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        tools:context=".ui.screen.MateriFragment">
+    <ImageView
+            android:id="@+id/imgTop"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/topmateri"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+    <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/back"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="8dp"/>
+    <ImageView
+            android:id="@+id/materiSatu"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/materisatu"
+            app:layout_constraintTop_toBottomOf="@+id/imgTop"
+            android:layout_marginTop="32dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/materiDua" android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"/>
+    <ImageView
+            android:id="@+id/materiDua"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/materidua"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/materiSatu"
+            app:layout_constraintBottom_toBottomOf="@+id/materiSatu"
+            app:layout_constraintStart_toEndOf="@+id/materiSatu" android:layout_marginEnd="16dp"
+            android:layout_marginStart="8dp"/>
+    <ImageView
+            android:id="@+id/materiTiga"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/materitiga"
+            app:layout_constraintTop_toBottomOf="@+id/materiSatu"
+            android:layout_marginTop="32dp"
+            app:layout_constraintEnd_toEndOf="@+id/materiSatu"
+            app:layout_constraintStart_toStartOf="@+id/materiSatu"/>
+    <ImageView
+            android:id="@+id/materiEmpat"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/materiempat" app:layout_constraintTop_toTopOf="@+id/materiTiga"
+            app:layout_constraintEnd_toEndOf="@+id/materiDua" app:layout_constraintStart_toEndOf="@+id/materiSatu"
+            app:layout_constraintBottom_toBottomOf="@+id/materiTiga"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

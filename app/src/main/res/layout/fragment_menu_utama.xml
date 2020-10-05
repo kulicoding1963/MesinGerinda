@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/menuutama"
+        tools:context=".ui.screen.MenuUtamaFragment">
+
+    <ImageView
+            android:id="@+id/imgSilabus"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/silabus"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="80dp"/>
+
+    <ImageView
+            android:id="@+id/imgMateri"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/materi"
+            app:layout_constraintTop_toBottomOf="@+id/imgSilabus" app:layout_constraintEnd_toEndOf="@+id/imgSilabus"
+            app:layout_constraintStart_toStartOf="@+id/imgSilabus" android:layout_marginTop="16dp"/>
+    <ImageView
+            android:id="@+id/imgVideo"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/video"
+            app:layout_constraintTop_toBottomOf="@+id/imgMateri" app:layout_constraintStart_toStartOf="@+id/imgMateri"
+            app:layout_constraintEnd_toEndOf="@+id/imgMateri" android:layout_marginTop="16dp"/>
+    <ImageView
+            android:id="@+id/imgTentang"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/tentang"
+            app:layout_constraintTop_toBottomOf="@+id/imgVideo" app:layout_constraintEnd_toEndOf="@+id/imgVideo"
+            app:layout_constraintStart_toStartOf="@+id/imgVideo" android:layout_marginTop="16dp"/>
+    <ImageView
+            android:id="@+id/imgKeluar"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/keluar"
+            app:layout_constraintTop_toBottomOf="@+id/imgTentang" app:layout_constraintEnd_toEndOf="@+id/imgTentang"
+            app:layout_constraintStart_toStartOf="@+id/imgTentang" android:layout_marginTop="24dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
