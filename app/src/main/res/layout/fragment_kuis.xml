@@ -31,7 +31,7 @@
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Tekan tombol dibawah untuk mengirim hasil evaluasi"
+            android:text="@string/tekan_tombol_dibawah_untuk_mengirim_hasil_evaluasi"
             app:layout_constraintTop_toBottomOf="@+id/rvEvaluasi"
             android:layout_marginTop="16dp"
             app:layout_constraintEnd_toEndOf="@+id/rvEvaluasi"
@@ -42,21 +42,24 @@
             android:id="@+id/imgWhat"
             android:layout_width="0dp"
             android:layout_height="100dp"
-            app:srcCompat="@android:drawable/ic_dialog_email"
+            app:srcCompat="@drawable/whats"
+            android:contentDescription="@string/todo"
             app:layout_constraintTop_toBottomOf="@+id/textView"
             app:layout_constraintStart_toStartOf="@+id/rvEvaluasi"
             android:layout_marginTop="8dp"
             app:layout_constraintEnd_toStartOf="@+id/imgEmail"
-            app:layout_constraintBottom_toTopOf="@+id/btnBack" android:layout_marginBottom="24dp"/>
+            app:layout_constraintBottom_toTopOf="@+id/btnBack" android:layout_marginBottom="24dp"
+            android:layout_marginEnd="32dp"/>
     <ImageView
             android:id="@+id/imgEmail"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            app:srcCompat="@android:drawable/ic_dialog_email"
+            app:srcCompat="@drawable/mail"
+            android:contentDescription="@string/todo"
             app:layout_constraintEnd_toEndOf="@+id/rvEvaluasi"
             app:layout_constraintTop_toTopOf="@+id/imgWhat"
             app:layout_constraintStart_toEndOf="@+id/imgWhat"
-            app:layout_constraintBottom_toBottomOf="@+id/imgWhat"/>
+            app:layout_constraintBottom_toBottomOf="@+id/imgWhat" android:layout_marginStart="32dp"/>
     <ImageView
             android:id="@+id/btnBack"
             android:layout_width="50dp"

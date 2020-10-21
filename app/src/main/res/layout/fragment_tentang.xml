@@ -5,20 +5,8 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/background"
+        android:background="@drawable/tentang"
         tools:context=".ui.screen.TentangFragment">
-    <ImageView
-            android:id="@+id/imgTop"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="8dp"
-            android:contentDescription="@string/todo"
-            android:src="@drawable/toptentang"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="24dp"
-            android:layout_marginEnd="24dp"/>
     <ImageView
             android:id="@+id/btnBack"
             android:layout_width="50dp"
@@ -32,25 +20,39 @@
     <ImageView
             android:id="@+id/imgSumber"
             android:layout_width="0dp"
-            android:layout_height="120dp"
+            android:layout_height="40dp"
             android:contentDescription="@string/todo"
             android:src="@drawable/tentangsumber"
-            app:layout_constraintTop_toBottomOf="@+id/imgTop"
-            android:layout_marginTop="16dp"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginEnd="24dp"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginStart="24dp"/>
+            android:layout_marginStart="24dp"
+            app:layout_constraintBottom_toTopOf="@+id/imgTentang"
+            android:layout_marginBottom="8dp"/>
     <ImageView
             android:id="@+id/imgTentang"
             android:layout_width="0dp"
-            android:layout_height="120dp"
+            android:layout_height="40dp"
             android:contentDescription="@string/todo"
             android:src="@drawable/tentangpengembang"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imgSumber"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="24dp"
-            android:layout_marginEnd="24dp"/>
+            android:layout_marginEnd="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="90dp"/>
 
+    <ImageView
+            android:id="@+id/imgForm"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/form"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgTentang"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

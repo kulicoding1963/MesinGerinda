@@ -39,7 +39,7 @@
             android:layout_width="0dp"
             android:layout_height="100dp"
             android:contentDescription="@string/todo"
-            android:src="@drawable/tentang"
+            android:src="@drawable/about"
             app:layout_constraintTop_toBottomOf="@+id/imgVideo" app:layout_constraintEnd_toEndOf="@+id/imgVideo"
             app:layout_constraintStart_toStartOf="@+id/imgVideo" android:layout_marginTop="16dp"/>
     <ImageView

@@ -32,7 +32,7 @@
     <ImageView
             android:id="@+id/imgBalikHoriz"
             android:layout_width="0dp"
-            android:layout_height="90dp"
+            android:layout_height="0dp"
             android:contentDescription="@string/todo"
             android:src="@drawable/videobalikhorizontal"
             app:layout_constraintTop_toBottomOf="@+id/imgTop"
@@ -40,63 +40,65 @@
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginEnd="24dp"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginStart="24dp"/>
+            android:layout_marginStart="24dp" app:layout_constraintBottom_toTopOf="@+id/imgBerputarHoriz"/>
     <ImageView
             android:id="@+id/imgBerputarHoriz"
             android:layout_width="0dp"
-            android:layout_height="90dp"
+            android:layout_height="0dp"
             android:contentDescription="@string/todo"
             android:src="@drawable/videoberputarhorizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imgBalikHoriz"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="24dp"
-            android:layout_marginEnd="24dp"/>
+            android:layout_marginEnd="24dp" app:layout_constraintBottom_toTopOf="@+id/imgBalikVerti"/>
     <ImageView
             android:id="@+id/imgBalikVerti"
             android:layout_width="0dp"
-            android:layout_height="90dp"
+            android:layout_height="0dp"
             android:contentDescription="@string/todo"
             android:src="@drawable/videobalikvertikal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imgBerputarHoriz"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="24dp"
-            android:layout_marginEnd="24dp"/>
+            android:layout_marginEnd="24dp" app:layout_constraintBottom_toTopOf="@+id/imgBerputarVerti"/>
 
     <ImageView
             android:id="@+id/imgBerputarVerti"
             android:layout_width="0dp"
-            android:layout_height="90dp"
+            android:layout_height="0dp"
             android:contentDescription="@string/todo"
             android:src="@drawable/videoberputarvertikal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imgBalikVerti"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="24dp"
-            android:layout_marginEnd="24dp"/>
+            android:layout_marginEnd="24dp" app:layout_constraintBottom_toTopOf="@+id/imgDressing"/>
 
     <ImageView
             android:id="@+id/imgDressing"
             android:layout_width="0dp"
-            android:layout_height="90dp"
+            android:layout_height="0dp"
             android:contentDescription="@string/todo"
             android:src="@drawable/videodressing"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imgBerputarVerti"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="24dp"
-            android:layout_marginEnd="24dp"/>
+            android:layout_marginEnd="24dp"
+            app:layout_constraintBottom_toTopOf="@+id/imgBalancing"/>
 
     <ImageView
             android:id="@+id/imgBalancing"
             android:layout_width="0dp"
-            android:layout_height="90dp"
+            android:layout_height="0dp"
             android:contentDescription="@string/todo"
             android:src="@drawable/videobalancing"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imgDressing"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="24dp"
-            android:layout_marginEnd="24dp"/>
+            android:layout_marginEnd="24dp" app:layout_constraintBottom_toTopOf="@+id/btnBack"
+            android:layout_marginBottom="32dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

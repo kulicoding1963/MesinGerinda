@@ -1,19 +1,19 @@
 package com.gerinda.apps.ui.screen
 
 import android.os.Bundle
+import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.gerinda.apps.databinding.FragmentSilabusBinding
-import com.gerinda.apps.ui.base.BaseFragment
+import com.gerinda.apps.databinding.FragmentSumberBinding
 import com.gerinda.apps.utils.back
 import com.gerinda.apps.utils.load
 
 
-class SilabusFragment : BaseFragment() {
+class SumberFragment : Fragment() {
 
-    private val binding:FragmentSilabusBinding by lazy {
-        FragmentSilabusBinding.inflate(layoutInflater)
+    private val binding: FragmentSumberBinding by lazy {
+        FragmentSumberBinding.inflate(layoutInflater)
     }
 
     override fun onCreateView(
@@ -25,7 +25,9 @@ class SilabusFragment : BaseFragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        binding.pdf.load("silabus.pdf")
+
         binding.btnBack.back()
+        binding.pdf.load("sumber.pdf", requireActivity())
     }
+
 }

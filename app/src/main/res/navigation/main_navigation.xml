@@ -6,10 +6,11 @@
         android:id="@+id/main_navigation"
         app:startDestination="@id/splashScreenFragment">
 
-    <fragment android:id="@+id/splashScreenFragment"
-              android:name="com.gerinda.apps.ui.screen.SplashScreenFragment"
-              android:label="fragment_splash_screen"
-              tools:layout="@layout/fragment_splash_screen">
+    <fragment
+            android:id="@+id/splashScreenFragment"
+            android:name="com.gerinda.apps.ui.screen.SplashScreenFragment"
+            android:label="fragment_splash_screen"
+            tools:layout="@layout/fragment_splash_screen">
         <action
                 android:id="@+id/action_splashScreenFragment_to_menuUtamaFragment"
                 app:destination="@id/menuUtamaFragment"
@@ -18,25 +19,34 @@
                 app:popUpTo="@id/splashScreenFragment"
                 app:popUpToInclusive="true"/>
     </fragment>
-    <fragment android:id="@+id/menuUtamaFragment"
-              android:name="com.gerinda.apps.ui.screen.MenuUtamaFragment"
-              android:label="fragment_menu_utama"
-              tools:layout="@layout/fragment_menu_utama">
+    <fragment
+            android:id="@+id/menuUtamaFragment"
+            android:name="com.gerinda.apps.ui.screen.MenuUtamaFragment"
+            android:label="fragment_menu_utama"
+            tools:layout="@layout/fragment_menu_utama">
         <action
                 android:id="@+id/action_menuUtamaFragment_to_silabusFragment"
                 app:destination="@id/silabusFragment"/>
-        <action android:id="@+id/action_menuUtamaFragment_to_materiFragment" app:destination="@id/materiFragment"/>
-        <action android:id="@+id/action_menuUtamaFragment_to_videoFragment" app:destination="@id/videoFragment"/>
-        <action android:id="@+id/action_menuUtamaFragment_to_tentangFragment" app:destination="@id/tentangFragment"/>
+        <action
+                android:id="@+id/action_menuUtamaFragment_to_materiFragment"
+                app:destination="@id/materiFragment"/>
+        <action
+                android:id="@+id/action_menuUtamaFragment_to_videoFragment"
+                app:destination="@id/videoFragment"/>
+        <action
+                android:id="@+id/action_menuUtamaFragment_to_tentangFragment"
+                app:destination="@id/tentangFragment"/>
     </fragment>
-    <fragment android:id="@+id/silabusFragment"
-              android:name="com.gerinda.apps.ui.screen.SilabusFragment"
-              android:label="fragment_silabus"
-              tools:layout="@layout/fragment_silabus"/>
-    <fragment android:id="@+id/materiFragment"
-              android:name="com.gerinda.apps.ui.screen.MateriFragment"
-              android:label="fragment_materi"
-              tools:layout="@layout/fragment_materi">
+    <fragment
+            android:id="@+id/silabusFragment"
+            android:name="com.gerinda.apps.ui.screen.SilabusFragment"
+            android:label="fragment_silabus"
+            tools:layout="@layout/fragment_silabus"/>
+    <fragment
+            android:id="@+id/materiFragment"
+            android:name="com.gerinda.apps.ui.screen.MateriFragment"
+            android:label="fragment_materi"
+            tools:layout="@layout/fragment_materi">
         <action
                 android:id="@+id/action_materiFragment_to_materiSatuFragment"
                 app:destination="@id/materiSatuFragment"/>
@@ -55,7 +65,8 @@
             android:name="com.gerinda.apps.ui.screen.MateriSatuFragment"
             android:label="fragment_materi_satu"
             tools:layout="@layout/fragment_materi_satu">
-        <action android:id="@+id/action_materiSatuFragment_to_contentMateriFragment"
+        <action
+                android:id="@+id/action_materiSatuFragment_to_contentMateriFragment"
                 app:destination="@id/contentMateriFragment"/>
     </fragment>
     <fragment
@@ -63,16 +74,17 @@
             android:name="com.gerinda.apps.ui.screen.MateriDuaFragment"
             android:label="fragment_materi_dua"
             tools:layout="@layout/fragment_materi_dua">
-        <action android:id="@+id/action_materiDuaFragment_to_contentMateriFragment"
+        <action
+                android:id="@+id/action_materiDuaFragment_to_contentMateriFragment"
                 app:destination="@id/contentMateriFragment"/>
     </fragment>
     <fragment
             android:id="@+id/materiTigaFragment"
             android:name="com.gerinda.apps.ui.screen.MateriTigaFragment"
-
             android:label="fragment_materi_tiga"
             tools:layout="@layout/fragment_materi_tiga">
-        <action android:id="@+id/action_materiTigaFragment_to_contentMateriFragment"
+        <action
+                android:id="@+id/action_materiTigaFragment_to_contentMateriFragment"
                 app:destination="@id/contentMateriFragment"/>
     </fragment>
     <fragment
@@ -80,13 +92,45 @@
             android:name="com.gerinda.apps.ui.screen.MateriEmpatFragment"
             android:label="fragment_materi_empat"
             tools:layout="@layout/fragment_materi_empat">
-        <action android:id="@+id/action_materiEmpatFragment_to_contentMateriFragment"
+        <action
+                android:id="@+id/action_materiEmpatFragment_to_contentMateriFragment"
                 app:destination="@id/contentMateriFragment"/>
     </fragment>
-    <fragment android:id="@+id/videoFragment" android:name="com.gerinda.apps.ui.screen.VideoFragment"
-              android:label="fragment_video" tools:layout="@layout/fragment_video"/>
-    <fragment android:id="@+id/tentangFragment" android:name="com.gerinda.apps.ui.screen.TentangFragment"
-              android:label="fragment_tentang" tools:layout="@layout/fragment_tentang"/>
-    <fragment android:id="@+id/contentMateriFragment" android:name="com.gerinda.apps.ui.screen.ContentMateriFragment"
-              android:label="fragment_content_materi" tools:layout="@layout/fragment_content_materi"/>
+    <fragment
+            android:id="@+id/videoFragment"
+            android:name="com.gerinda.apps.ui.screen.VideoFragment"
+            android:label="fragment_video"
+            tools:layout="@layout/fragment_video">
+        <action android:id="@+id/action_videoFragment_to_contentVideoFragment"
+                app:destination="@id/contentVideoFragment"/>
+    </fragment>
+    <fragment
+            android:id="@+id/tentangFragment"
+            android:name="com.gerinda.apps.ui.screen.TentangFragment"
+            android:label="fragment_tentang"
+            tools:layout="@layout/fragment_tentang">
+        <action
+                android:id="@+id/action_tentangFragment_to_pengembangFragment"
+                app:destination="@id/pengembangFragment"/>
+        <action
+                android:id="@+id/action_tentangFragment_to_sumberFragment"
+                app:destination="@id/sumberFragment"/>
+    </fragment>
+    <fragment
+            android:id="@+id/contentMateriFragment"
+            android:name="com.gerinda.apps.ui.screen.ContentMateriFragment"
+            android:label="fragment_content_materi"
+            tools:layout="@layout/fragment_content_materi"/>
+    <fragment
+            android:id="@+id/pengembangFragment"
+            android:name="com.gerinda.apps.ui.screen.PengembangFragment"
+            android:label="fragment_pengembang"
+            tools:layout="@layout/fragment_pengembang"/>
+    <fragment
+            android:id="@+id/sumberFragment"
+            android:name="com.gerinda.apps.ui.screen.SumberFragment"
+            android:label="fragment_sumber"
+            tools:layout="@layout/fragment_sumber"/>
+    <fragment android:id="@+id/contentVideoFragment" android:name="com.gerinda.apps.ui.screen.ContentVideoFragment"
+              android:label="fragment_content_video" tools:layout="@layout/fragment_content_video"/>
 </navigation>

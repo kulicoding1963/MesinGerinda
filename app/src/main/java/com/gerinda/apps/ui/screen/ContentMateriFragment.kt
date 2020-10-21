@@ -101,13 +101,13 @@ class ContentMateriFragment : BaseFragment() {
     private fun fetchEvaluasiSatuSatu(): ArrayList<Evaluasi> {
         val listMenu: ArrayList<Evaluasi> = ArrayList()
         listMenu.add(
-            Evaluasi(evaluasi = "Simpulkan secara singkat cara kerja mesin gerinda datar berdasarkan pengertian diatas!")
+            Evaluasi(evaluasi = "Simpulkan pengertian mesin gerinda datar, fungsi dari mesin gerinda datar, dan prinsip kerja mesin gerinda datar!")
         )
         listMenu.add(
-            Evaluasi(evaluasi = "Kelompokkan jenis mesin gerinda datar berdasarkan sumbu utama dan pengoperasiannya!")
+            Evaluasi(evaluasi = "Kelompokan jenis mesin gerinda datar berdasarkan sumbu utama mesin dan pelayanan pengoperasian mesin gerinda datar!")
         )
         listMenu.add(
-            Evaluasi(evaluasi = "Jelaskan fungsi bagian dari System hidrolik dan system pendingin pada bagian mesin gerinda datar!")
+            Evaluasi(evaluasi = "Tentukan persamaan dari bagian utama mesin gerinda datar spindle horizontal dan spindle vertical!")
         )
         return listMenu
     }
@@ -115,16 +115,10 @@ class ContentMateriFragment : BaseFragment() {
     private fun fetchEvaluasiSatuDua(): ArrayList<Evaluasi> {
         val listMenu: ArrayList<Evaluasi> = ArrayList()
         listMenu.add(
-            Evaluasi(evaluasi = "Simpulkan secara singkat apa yang dimaksud dengan perlengkapan mesin gerinda datar!")
+            Evaluasi(evaluasi = "Kelompokan 3 jenis utama perlengkapan mesin gerinda datar disertai contohnya dan fungsinya!")
         )
         listMenu.add(
-            Evaluasi(evaluasi = "Jelaskan apa yang dimaksud dengan truing dan dressing pada roda gerinda, dan coba sebutkan alat yang digunakan ketika yang kita truing dan dressing dalah roda gerinda lurus!")
-        )
-        listMenu.add(
-            Evaluasi(evaluasi = "Jelaskan mengapa sebelum batu gerinda digunakan untuk proses penggerindaan harus melalui proses balancing?")
-        )
-        listMenu.add(
-            Evaluasi(evaluasi = "Ketika kita akan menggerinda poros lurus perlengkapan pencekaman apa yang bisa kita gunakan dan tuliskan alasannya?")
+            Evaluasi(evaluasi = "Bagaimana cara mengoperasikan mesin gerinda datar spindel horizontal sesuai SOP?")
         )
         return listMenu
     }
@@ -132,16 +126,13 @@ class ContentMateriFragment : BaseFragment() {
     private fun fetchEvaluasiDuaSatu(): ArrayList<Evaluasi> {
         val listMenu: ArrayList<Evaluasi> = ArrayList()
         listMenu.add(
-            Evaluasi(evaluasi = "Jelaskan fungsi roda gerinda pada proses pemesinan gerinda?")
+            Evaluasi(evaluasi = "Simpulkan pengertian roda gerinda, proses pembuatanya, dan fungsi roda gerinda!")
         )
         listMenu.add(
-            Evaluasi(evaluasi = "Ketika kita akan menggerinda alat potong, butiran asah apa yang kita gunakan dan perekat apa yang cocok untuk butiran asah tersebut? Coba jelaskan!")
+            Evaluasi(evaluasi = "Tentukan jenis butiran asah dan perekat yang sesuai untuk penggerindaan alat-alat potong! Dan jelaskan alasannya!")
         )
         listMenu.add(
-            Evaluasi(evaluasi = "Jelaskan apa yang membedakan tingkat kekerasan suatu batu gerinda!")
-        )
-        listMenu.add(
-            Evaluasi(evaluasi = "Jelaskan fungsi pori-pori jenisnya!")
+            Evaluasi(evaluasi = "Apa yang dapat membedakan tingkat kekerasan dari sebuah batu gerinda! Jelaskan!")
         )
         return listMenu
     }
@@ -149,19 +140,13 @@ class ContentMateriFragment : BaseFragment() {
     private fun fetchEvaluasiDuaDua(): ArrayList<Evaluasi> {
         val listMenu: ArrayList<Evaluasi> = ArrayList()
         listMenu.add(
-            Evaluasi(evaluasi = "Jelaskan fungsi internal grinding wheel!")
+            Evaluasi(evaluasi = "Dari uraian materi tersebut bentuk batu gerinda apa yang digunakan untuk penggerindaan alur V? coba jelaskan alasan pemilihan batu gerinda tersebut!")
         )
         listMenu.add(
-            Evaluasi(evaluasi = "Ketika kita akan menggerinda permukaan alur V batu gerinda bentuk apa yang kita gunakan? Jelaskan alasannya!")
+            Evaluasi(evaluasi = "Gambarkan bentuk penampang dari roda gerinda mangkuk kerucut dan roda gerinda mangkuk lurus! Apa yang membedakan bentuk roda gerinda mangkuk kerucut dan lurus?")
         )
         listMenu.add(
-            Evaluasi(evaluasi = "Dari uraian materi tersebut kelompokan bentuk batu gerinda yang biasanya digunakan untuk mengasah alat-alat potong dan jelaskan fungsinya!")
-        )
-        listMenu.add(
-            Evaluasi(evaluasi = "Jelaskan fungsi batu gerinda khusus!")
-        )
-        listMenu.add(
-            Evaluasi(evaluasi = "Gambarkan bentuk penampang batu gerinda Lurus dan tirus satu sisi!")
+            Evaluasi(evaluasi = "Gambarkan bentuk roda gerinda bentuk khusus dan uraikan pendapat anda tentang batu gerinda tersebut!")
         )
         return listMenu
     }
@@ -169,19 +154,16 @@ class ContentMateriFragment : BaseFragment() {
     private fun fetchEvaluasiDuaTiga(): ArrayList<Evaluasi> {
         val listMenu: ArrayList<Evaluasi> = ArrayList()
         listMenu.add(
-            Evaluasi(evaluasi = "Identifikasikan roda gerinda dengan A 36 L 5 V BE")
+            Evaluasi(evaluasi = "Identifikasikan roda gerinda dengan identitas A 36 L 5 V BE ! jelaskan karakteristik dari roda gerinda tersebut!")
         )
         listMenu.add(
-            Evaluasi(evaluasi = "Jelaskan fungsi dari masing masing butiran asah alumunium oksida, silicon karbida, intan!")
+            Evaluasi(evaluasi = "Identifikasikan roda gerinda dengan identitas 38 A 100 R 5 V BE! Jelaskan karakteristik dari batu gerinda tersebut!")
         )
         listMenu.add(
-            Evaluasi(evaluasi = "Jelaskan fungsi dari masing masing bahan perekat, tembikar, silikat, karet, bakelit, shellac!")
+            Evaluasi(evaluasi = "Jelaskan fungsi dari masing-masing butiran asah aluminium oksida dan silikon karbida!")
         )
         listMenu.add(
-            Evaluasi(evaluasi = "Identifikasikan roda gerinda dengan spesifikasi 250x50x100!")
-        )
-        listMenu.add(
-            Evaluasi(evaluasi = "Identifikasikan roda gerinda dengan indentitas 38 A 100 R 5 V BE!")
+            Evaluasi(evaluasi = "Jelaskan fungsi dari masing-masing bahan perekat tembikar, silikat, dan karet!")
         )
         return listMenu
     }
@@ -189,19 +171,13 @@ class ContentMateriFragment : BaseFragment() {
     private fun fetchEvaluasiDuaEmpat(): ArrayList<Evaluasi> {
         val listMenu: ArrayList<Evaluasi> = ArrayList()
         listMenu.add(
-            Evaluasi(evaluasi = "Mengapa roda gerinda perlu diasah? Sebutkan macam-macam alat pengasah roda gerinda!")
+            Evaluasi(evaluasi = "Mengapa roda gerinda perlu diasah? Tentukan langkah-langkah dalam proses pengasahan batu gerinda (dressing)!")
         )
         listMenu.add(
             Evaluasi(evaluasi = "Apa yang dimaksud dengan trueing dan dressing? Jelaskan!")
         )
         listMenu.add(
-            Evaluasi(evaluasi = "Apa yang membedakan Loading dan Glazing? Jelaskan!")
-        )
-        listMenu.add(
-            Evaluasi(evaluasi = "Jelaskan langkah-langkah dalam proses dressing!")
-        )
-        listMenu.add(
-            Evaluasi(evaluasi = "Carilah alat keselamatan kerja untuk pekerjaan gerinda permukaan!")
+            Evaluasi(evaluasi = "Coba selidiki bagaimana glazing dan loading bisa terjadi pada roda gerinda!")
         )
         return listMenu
     }
@@ -209,16 +185,13 @@ class ContentMateriFragment : BaseFragment() {
     private fun fetchEvaluasiDuaLima(): ArrayList<Evaluasi> {
         val listMenu: ArrayList<Evaluasi> = ArrayList()
         listMenu.add(
-            Evaluasi(evaluasi = "Mengapa roda gerinda perlu disetimbangkan terlebih dahulu sebelum dipakai? Jelaskan langkah-langkahnya secara singkat dan jelas!")
+            Evaluasi(evaluasi = "Mengapa roda gerinda perlu disetimbangkan terlebih dahulu sebelum dipakai?")
         )
         listMenu.add(
-            Evaluasi(evaluasi = "Apa saja alat yang digunakan untuk menyetimbangkan roda gerinda? Dan coba jelaskan fungsi dari alat tersebut!")
+            Evaluasi(evaluasi = "Apa tujuan untuk menyetimbangkan roda gerinda? Coba simpulkan!")
         )
         listMenu.add(
-            Evaluasi(evaluasi = "Apa tujuan untuk menyetimbangkan roda gerinda?")
-        )
-        listMenu.add(
-            Evaluasi(evaluasi = "Jelaskan akibat ketika roda gerinda tidak setimbang!")
+            Evaluasi(evaluasi = "Coba tentukan faktor apa yang membuat roda gerinda tidak setimbang!")
         )
         listMenu.add(
             Evaluasi(evaluasi = "Bagaimana cara memasang roda gerinda? gambarkan secara sederhana!")
@@ -228,12 +201,6 @@ class ContentMateriFragment : BaseFragment() {
 
     private fun fetchEvaluasiTigaSatu(): ArrayList<Evaluasi> {
         val listMenu: ArrayList<Evaluasi> = ArrayList()
-        listMenu.add(
-            Evaluasi(evaluasi = "Jelaskan apa yang dimaksud parameter pemesinan gerinda datar!")
-        )
-        listMenu.add(
-            Evaluasi(evaluasi = "Jelaskan apa yang dimaksud dengan kecepatan keliling!")
-        )
         listMenu.add(
             Evaluasi(evaluasi = "Sebuah roda gerinda berdiameter 250 mm mempunyai kecepatan putar 2200 rpm. Hitunglah kecepatan keliling roda gerinda tersebut!")
         )
@@ -246,13 +213,13 @@ class ContentMateriFragment : BaseFragment() {
     private fun fetchEvaluasiTigaDua(): ArrayList<Evaluasi> {
         val listMenu: ArrayList<Evaluasi> = ArrayList()
         listMenu.add(
-            Evaluasi(evaluasi = "Sebuah roda gerinda berdiameter (d) 180 mm, akan digunakan dengan kecepatan keliling (POS) sebesar 28 meter/det. Hitung berapa kecepatan putar roda gerinda tersebut! ")
+            Evaluasi(evaluasi = "Sebuah roda gerinda berdiameter (d) 180 mm, akan digunakan dengan kecepatan keliling (POS) sebesar 28 meter/det. Hitung berapa kecepatan putar roda gerinda tersebut!")
         )
         listMenu.add(
-            Evaluasi(evaluasi = "Sebuah benda kerja berbentuk balok persegi panjang memilki ukuran panjang (l) 360 mm, akan digerinda datar dengan roda gerinda berdiameter 300 mm. Hitung panjang langkah penggerindaan datar gerak memanjangnya!")
+            Evaluasi(evaluasi = "Sebuah benda kerja berbentuk balok persegi panjang memiliki ukuran panjang (l) 360 mm, akan di gerinda datar dengan roda gerinda berdiameter 300 mm. Hitung panjang langkah penggerindaan datar gerak memanjangnya!")
         )
         listMenu.add(
-            Evaluasi(evaluasi = "Sebuah benda kerja berbentuk balok persegi panjang memilki ukuran lebar (A)= 180 mm, akan dilakukan penggrindaan datar dengan lebar roda gerinda (b)= 20 mm. Hitung panjang langkah penggerindaan datar gerak melintangnya!")
+            Evaluasi(evaluasi = "Sebuah benda kerja berbentuk balok persegi panjang memiliki ukuran lebar (A)= 180 mm, akan dilakukan penggerindaan datar dengan lebar roda gerinda (b)= 20 mm. Hitung panjang langkah penggerindaan datar gerak melintangnya!")
         )
         return listMenu
     }
@@ -260,7 +227,7 @@ class ContentMateriFragment : BaseFragment() {
     private fun fetchEvaluasiTigaTiga(): ArrayList<Evaluasi> {
         val listMenu: ArrayList<Evaluasi> = ArrayList()
         listMenu.add(
-            Evaluasi(evaluasi = "Sebuah benda kerja berbentuk persegi panjang memilki ukuran panjang (l) 320 mm dan lebarnya 16 mm, akan dilakukan penggerindaan datar tanpa pergeseran meja dengan diameter roda gerinda (d) 250 mm, jumlah pemakanan (i) 6 kali dan kecepatan gerak meja 4 meter/menit. Hitung waktu pemesinannya!")
+            Evaluasi(evaluasi = "Sebuah benda kerja berbentuk persegi panjang memiliki ukuran panjang (l) 320 mm dan lebarnya 16 mm, akan dilakukan penggerindaan datar tanpa pergeseran meja dengan diameter roda gerinda (d) 250 mm, jumlah pemakanan (i) 6 kali dan kecepatan gerak meja 4 meter/menit. Hitung waktu pemesinannya!")
         )
         listMenu.add(
             Evaluasi(evaluasi = "Sebuah benda kerja berbentuk persegi panjang memiliki ukuran panjang (l) 200 mm dan lebarnya (A) 100 mm, akan dilakukan penggerindaan datar dengan pergeseran meja. Menggunakan diameter roda gerinda (d) 240 mm dan lebarnya (b) 22 mm, jumlah pemakanan (i) 6 kali, kecepatan gerak meja (F) 4 meter/menit dan pemakanan menyamping (f) 14 mm. Hitung waktu pemesinannya!.")
