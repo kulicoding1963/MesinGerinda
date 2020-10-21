@@ -27,14 +27,14 @@ class KuisFragment(private val subject: String, private val evaluasi: ArrayList<
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
         val dialog = super.onCreateDialog(savedInstanceState) as BottomSheetDialog
         dialog.setContentView(binding.root)
-
+        println("Data evaluasi : ${evaluasi.size}")
         mBehavior = BottomSheetBehavior.from(binding.root.parent as View)
         mBehavior.peekHeight = BottomSheetBehavior.PEEK_HEIGHT_AUTO
 
         val evaluasiAdapter = EvaluasiAdapter()
         binding.rvEvaluasi.layoutManager = LinearLayoutManager(requireContext())
-        binding.rvEvaluasi.setHasFixedSize(true)
-        binding.rvEvaluasi.isNestedScrollingEnabled = false
+//        binding.rvEvaluasi.setHasFixedSize(true)
+//        binding.rvEvaluasi.isNestedScrollingEnabled = false
         binding.rvEvaluasi.adapter = evaluasiAdapter
         evaluasiAdapter.replaceAll(evaluasi)
 

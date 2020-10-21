@@ -35,6 +35,7 @@ class EvaluasiAdapter : RecyclerView.Adapter<EvaluasiAdapter.EvaluasiHolder>() {
         private var evaluasi: TextView = itemView.findViewById(R.id.txtEvaluasi)
         private val nomer: TextView = itemView.findViewById(R.id.txtNumber)
         fun bind(item: Evaluasi, number: Int) {
+            println("Item saya ${item.evaluasi}")
             evaluasi.text = item.evaluasi
             nomer.text = "${number + 1} ."
         }
