@@ -3,8 +3,10 @@ package com.gerinda.apps.ui.screen
 import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.content.pm.PackageManager
+import android.database.Cursor
 import android.net.Uri
 import android.os.Bundle
+import android.provider.ContactsContract
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -33,11 +35,16 @@ class PengembangFragment : Fragment() {
         binding.btnBack.back()
         binding.imgWhats.setOnClickListener {
             val contact = "+6281226601682"
-            val url = "https://api.whatsapp.com/send?phone=$contact"
+//            val contact = "+628122660134343"
+            val message = "Halo pak"
+            val url = "https://api.whatsapp.com/send?phone=$contact&text=${message}"
             try {
                 val pm = requireContext().packageManager
                 pm.getPackageInfo("com.whatsapp", PackageManager.GET_ACTIVITIES)
                 val i = Intent(Intent.ACTION_VIEW)
+                i.type = "text/plain"
+                val text = "YOUR TEXT HERE"
+                i.putExtra(Intent.EXTRA_TEXT,text)
                 i.data = Uri.parse(url)
                 startActivity(i)
             } catch (e: PackageManager.NameNotFoundException) {
